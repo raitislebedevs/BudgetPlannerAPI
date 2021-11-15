@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_budgets",
+  "info": {
+    "name": "UserBudget",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "day": {
+      "type": "json"
+    },
+    "week": {
+      "type": "json"
+    },
+    "month": {
+      "type": "json"
+    },
+    "year": {
+      "type": "json"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

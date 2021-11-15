@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_budget_item_budget_items",
+  "info": {
+    "name": "BudgetItem",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "Category": {
+      "type": "string"
+    },
+    "CategoryItem": {
+      "type": "string"
+    },
+    "ActivityDate": {
+      "type": "date"
+    },
+    "ActivityAmount": {
+      "type": "decimal"
+    },
+    "User": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "Activity": {
+      "type": "enumeration",
+      "enum": [
+        "spending",
+        "earning",
+        "planning",
+        "investing",
+        "saving"
+      ]
+    },
+    "ActivityLimit": {
+      "type": "decimal"
+    }
+  }
+}

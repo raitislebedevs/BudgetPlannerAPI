@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_categories",
+  "info": {
+    "name": "UserCategories",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "incomeCategories": {
+      "type": "json"
+    },
+    "spendingCategories": {
+      "type": "json"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

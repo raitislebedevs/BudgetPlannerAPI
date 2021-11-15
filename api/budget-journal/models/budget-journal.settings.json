@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "budget_journals",
+  "info": {
+    "name": "BudgetJournal",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "category": {
+      "type": "string"
+    },
+    "categoryItem": {
+      "type": "string"
+    },
+    "activityDate": {
+      "type": "date"
+    },
+    "activityAmount": {
+      "type": "decimal"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "activity": {
+      "type": "enumeration",
+      "enum": [
+        "income",
+        "expense",
+        "planning",
+        "investing"
+      ]
+    }
+  }
+}

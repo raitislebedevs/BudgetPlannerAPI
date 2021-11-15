@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/budget-journals",
+      "handler": "budget-journal.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/budget-journals/count",
+      "handler": "budget-journal.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/budget-journals/:id",
+      "handler": "budget-journal.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/budget-journals",
+      "handler": "budget-journal.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/budget-journals/:id",
+      "handler": "budget-journal.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/budget-journals/:id",
+      "handler": "budget-journal.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
