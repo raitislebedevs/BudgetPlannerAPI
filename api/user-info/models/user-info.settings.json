@@ -47,6 +47,11 @@
     },
     "userId": {
       "type": "string"
+    },
+    "budget": {
+      "type": "component",
+      "repeatable": true,
+      "component": "budget-item.budget-item"
     }
   }
 }

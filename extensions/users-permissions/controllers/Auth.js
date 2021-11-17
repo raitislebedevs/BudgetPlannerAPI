@@ -678,6 +678,12 @@ module.exports = {
       const userInfo = await strapi.query("user-info").create(params.userInfo);
       params.userInfo = userInfo.id;
 
+      // const userBudget = await strapi.query("user-budget").create();
+      // params.userBudget = userBudget.id;
+
+      // const userCategory = await strapi.query("user-categories").create();
+      // params.userCategory = userCategory.id;
+
       const user = await strapi
         .query("user", "users-permissions")
         .create(params);

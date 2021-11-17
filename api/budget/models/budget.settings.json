@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "budgets",
+  "info": {
+    "name": "Budget",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "category": {
+      "type": "string"
+    },
+    "categoryItem": {
+      "type": "string"
+    },
+    "limit": {
+      "type": "decimal"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "period": {
+      "type": "enumeration",
+      "enum": [
+        "Day",
+        "Week",
+        "Month",
+        "Year",
+        "All"
+      ]
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "role"
+    }
+  }
+}
