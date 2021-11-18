@@ -18,7 +18,7 @@
     "categoryItem": {
       "type": "string"
     },
-    "limit": {
+    "activityAmount": {
       "type": "decimal"
     },
     "icon": {
@@ -36,7 +36,7 @@
     },
     "user": {
       "plugin": "users-permissions",
-      "model": "role"
+      "model": "user"
     }
   }
 }
