@@ -21,9 +21,6 @@
     "activityAmount": {
       "type": "decimal"
     },
-    "icon": {
-      "type": "string"
-    },
     "period": {
       "type": "enumeration",
       "enum": [

@@ -48,10 +48,15 @@
     "userId": {
       "type": "string"
     },
-    "budget": {
-      "type": "component",
-      "repeatable": true,
-      "component": "budget-item.budget-item"
+    "language": {
+      "type": "enumeration",
+      "enum": [
+        "en",
+        "lv"
+      ]
+    },
+    "userCategories": {
+      "model": "user-categories"
     }
   }
 }

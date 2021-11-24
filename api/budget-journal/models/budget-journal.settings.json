@@ -28,9 +28,6 @@
       "plugin": "users-permissions",
       "model": "user"
     },
-    "icon": {
-      "type": "string"
-    },
     "activity": {
       "type": "enumeration",
       "enum": [
