@@ -4,22 +4,17 @@ module.exports = ({ env }) => ({
       enabled: true,
       models: [
         {
-          model: "user-infos",
-          maxAge: 18000000,
-          cacheTimeout: 6000,
-        },
-        {
-          model: "currencies",
-          maxAge: 18000000,
-          cacheTimeout: 6000,
-        },
-        {
-          model: "users",
+          model: "budget",
           maxAge: 18000000,
           cacheTimeout: 6000,
         },
         {
           model: "budget-journals",
+          maxAge: 18000000,
+          cacheTimeout: 6000,
+        },
+        {
+          model: "user-categories",
           maxAge: 18000000,
           cacheTimeout: 6000,
         },
